@@ -1,0 +1,42 @@
+---
+title: "BPM E-Learning: Certificación Reactiva con Vue & Livewire"
+publishedAt: "2024-05-10"
+summary: "Desarrollo Front-End para una plataforma EdTech de certificación en manipulación de alimentos, manejando progreso multimedia y evaluaciones dinámicas."
+images:
+  - "/images/projects/bpm/bpm-01.jpg"
+  - "/images/projects/bpm/bpm-02.jpg"
+  - "/images/projects/bpm/bpm-03.jpg"
+team:
+  - name: "Ronald Bonilla"
+    role: "Front-End Developer (Waytics Team)"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/ronald-bonilla/"
+link: "https://virtual.bpmsas.co/login"
+---
+
+## Resumen del Proyecto
+
+Como parte del equipo de desarrollo Front-End en la agencia **Waytics**, participé en la construcción de la plataforma de certificación virtual para BPM SAS. El sistema está diseñado para que miles de usuarios accedan anualmente a capacitarse y recertificarse en manipulación de alimentos. El reto principal fue construir una interfaz de aprendizaje fluida que integrara consumo multimedia, seguimiento de progreso y un sistema de evaluaciones estricto para la generación automática de certificados, todo respaldado por una arquitectura híbrida entre Laravel y Vue.js.
+
+## Características Clave del Desarrollo Front-End
+
+- **Flujos de Aprendizaje Multimedia:** Integración de reproductores de video y visores de documentos (actividades complementarias) dentro de una interfaz de usuario limpia, diseñada para mantener la atención del estudiante y reducir las tasas de abandono.
+- **Sistema de Evaluaciones Dinámicas:** Construcción de los componentes visuales para los cuestionarios de certificación. Se requería una respuesta inmediata en la interfaz gráfica (feedback en tiempo real) al momento de que el usuario respondiera y enviara sus evaluaciones para aprobar el módulo.
+- **Gestión de Estado y Progreso:** Desarrollo de indicadores visuales (barras de progreso, estados de módulos bloqueados/desbloqueados) que se sincronizaban con la base de datos para garantizar que el usuario completara el 100% del contenido antes de habilitar la descarga del certificado.
+
+## Arquitectura Técnica: Vue & Laravel Livewire
+
+El proyecto demandaba interactividad rápida sin sobrecargar el cliente con una SPA (Single Page Application) masiva.
+
+- **Laravel Livewire:** Se utilizó para manejar la comunicación asíncrona con el servidor de forma reactiva. Esto permitió procesar la lógica de negocio pesada (como la validación de respuestas de las evaluaciones y la generación de PDFs) sin recargar la página, escribiendo menos JavaScript puro.
+- **Vue.js:** Implementado para los micro-componentes de alta interactividad en el Front-End donde Livewire se quedaba corto, garantizando transiciones fluidas y un manejo de eventos de usuario instantáneo.
+
+## Retos y Aprendizajes
+
+Trabajar en un ecosistema que combina Livewire y Vue.js representó un excelente reto de arquitectura de Front-End. Aprendí a delegar responsabilidades técnicas: utilizar Vue para la reactividad de la interfaz pura (UI state) y dejar que Livewire manejara el estado del servidor (Server state). Además, la colaboración dentro del equipo de Waytics me permitió perfeccionar mis flujos de trabajo con control de versiones y revisión de código en proyectos de mediana/alta escala.
+
+## Resultado
+
+Una plataforma de e-learning robusta, intuitiva y a prueba de fallos. Los usuarios logran realizar su recertificación sin frustraciones técnicas, consumiendo el contenido multimedia y rindiendo sus exámenes en una interfaz que responde instantáneamente a sus acciones.
+
+---

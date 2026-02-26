@@ -2,18 +2,18 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Ronald",
+  lastName: "Bonilla",
+  name: `Ronald Bonilla`,
+  role: "Senior UX/UI Designer & Front-End Developer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "ronaldbonilla@gmail.com",
+  location: "America/Bogota", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["Español", "English"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: <>My weekly newsletter about creativity and engineering</>,
 };
@@ -22,28 +22,11 @@ const social: Social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
   // Set essentials: true for links you want to show on the about page
-  {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system",
-    essential: true,
-  },
+
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-    essential: true,
-  },
-  {
-    name: "Instagram",
-    icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
-    essential: false,
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/ronald-bonilla/",
     essential: true,
   },
   {
@@ -58,11 +41,11 @@ const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  title: `Portfolio ${person.name} `,
+  description: `Portfolio perssonal mostrando mi trabajo como ${person.role}`,
+  headline: <>Fusionando diseño y código</>,
   featured: {
-    display: true,
+    display: false,
     title: (
       <Row gap="12" vertical="center">
         <strong className="ml-4">Once UI</strong>{" "}
@@ -76,8 +59,8 @@ const home: Home = {
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
-</>
+      Soy Ronald, un perfil híbrido de UX/UI y Front-End enfocado en <Text as="span" size="xl" weight="strong">Sistemas Escalables</Text>. Acorto la brecha entre la estética visual y el código, transformando problemas complejos en experiencias fluidas.
+    </>
   ),
 };
 
@@ -102,52 +85,63 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Soy Ronald, un perfil híbrido de UX/UI y Front-End enfocado en Sistemas Escalables. Acorto la brecha entre la estética visual y el código, transformando problemas complejos en experiencias fluidas.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
-    title: "Work Experience",
+    display: true,
+    title: "Experiencia Laboral",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Consultor Independiente",
+        timeframe: "2024 - Presente",
+        role: "Senior UX/UI Designer & Front-End Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Desarrollo de interfaces escalables y prototipado bajo el enfoque <strong>'Component-Driven Design'</strong> para integraciones sin fricción en entornos React, Next.js y Svelte.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Liderazgo en estrategias de optimización de conversión (CRO) y arquitecturas dinámicas (WordPress/Headless) para clientes B2B/B2C, como Ancore.es, Makai Hostel y Finca Don Raul.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Audifarma S.A.",
+        timeframe: "2021 - 2024",
+        role: "Web Designer & Developer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Gestión y modernización integral de sitios web corporativos de alto tráfico, erradicando la deuda técnica legacy mediante la integración de un nuevo Front-End modular en <strong>dotCMS</strong>.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Creación del Sistema de Diseño omnicanal para la App móvil (+1.5M usuarios activos) y diseño de la Intranet corporativa para más de 6,000 empleados.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Waytic",
+        timeframe: "2020 - 2021",
+        role: "Senior Front-End Developer",
+        achievements: [
+          <>
+            Lideré el desarrollo en ecosistemas Full Stack, logrando una reducción del <strong>45% en los tiempos de carga</strong> de las plataformas.
+          </>,
+          <>
+            Desarrollo de la capa Front-End para plataformas EdTech (como la certificación de BPM SAS) implementando interfaces reactivas con <strong>Vue.js y Laravel Livewire</strong>.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "SENA (Servicio Nacional de Aprendizaje)",
+        timeframe: "2015 - 2019",
+        role: "Sennova Designer",
+        achievements: [
+          <>
+            Lideré el diseño y desarrollo técnico de herramientas interactivas orientadas a la tecnología educativa (EdTech) a nivel nacional.
           </>,
         ],
         images: [],
@@ -156,53 +150,46 @@ const about: About = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Studios",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
-      },
+        name: "Universidad de Caldas",
+        description: <>Diseñador Visual.</>,
+      }
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Habilidades Técnicas",
     skills: [
       {
         title: "Figma",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>Capaz de prototipar en Figma bajo una lógica estricta de componentes, acelerando el paso a código para producción.</>
         ),
         tags: [
           {
             name: "Figma",
             icon: "figma",
           },
+          {
+            name: "Photoshop",
+            icon: "photoshop",
+          },
+          {
+            name: "Illustrator",
+            icon: "illustrator",
+          },
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+
         ],
       },
       {
-        title: "Next.js",
+        title: "React.js & Vue.js Ecosystem",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>Desarrollo de interfaces reactivas y flujos interactivos dinámicos. Gestión eficiente del estado en el Front-End para plataformas educativas y corporativas utilizando <strong>Vue.js</strong> y <strong>React.js</strong>.</>
         ),
         tags: [
           {
@@ -210,22 +197,21 @@ const about: About = {
             icon: "javascript",
           },
           {
-            name: "Next.js",
-            icon: "nextjs",
+            name: "React.js",
+            icon: "react",
           },
           {
-            name: "Supabase",
-            icon: "supabase",
+            name: "Vue.js",
+            icon: "vue",
+          },
+          {
+            name: "Tailwind CSS",
+            icon: "tailwind",
           },
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+
         ],
       },
     ],
@@ -252,49 +238,59 @@ const work: Work = {
 
 const gallery: Gallery = {
   path: "/gallery",
-  label: "Gallery",
+  label: "Galleria",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
   // Images by https://lorant.one
   // These are placeholder images, replace with your own
   images: [
     {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
+      src: "/images/gallery/andina-automotriz.jpg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
+      src: "/images/gallery/blend-apartasuits-web.jpg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/vertical-2.jpg",
+      src: "/images/gallery/concentrados-del-centro.jpg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/horizontal-2.jpg",
+      src: "/images/gallery/tanque.jpg",
       alt: "image",
-      orientation: "horizontal",
+      orientation: "vertical",
     },
     {
-      src: "/images/gallery/horizontal-4.jpg",
+      src: "/images/gallery/the-gallery-travel-web.jpg",
       alt: "image",
-      orientation: "horizontal",
+      orientation: "vertical",
     },
     {
-      src: "/images/gallery/vertical-3.jpg",
+      src: "/images/gallery/zalomz-web.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/colcones-nix.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/finca-don-raul.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/fdr.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/minao.jpg",
       alt: "image",
       orientation: "vertical",
     },

@@ -1,0 +1,40 @@
+---
+title: "Portfolio GIF Generator: React Web App"
+publishedAt: "2026-02-26"
+summary: "Web App en React diseñada para convertir imágenes estáticas (JPG/PNG) en GIFs de scroll vertical, optimizados para Behance y Pinterest, con previsualización en tiempo real."
+images:
+  - "/images/projects/scrollgen/scrollgen.jpg"
+team:
+  - name: "Ronald Bonilla"
+    role: "Product Designer & React Developer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/ronaldbonilla/"
+link: "https://gif-generator-app-one.vercel.app/"
+---
+
+## Resumen del Proyecto
+
+Al armar casos de estudio para Behance o Pinterest, los diseñadores nos enfrentamos a un problema constante: mostrar diseños largos (landing pages) de forma dinámica sin perder calidad. Para solucionar esto, diseñé y desarrollé desde cero una Web App en React que automatiza la creación de GIFs de scroll vertical. La herramienta permite subir mockups, ajustar parámetros técnicos y descargar un archivo optimizado en segundos, todo bajo una interfaz minimalista y sin fricciones.
+
+## Características Clave (UX/UI & Front-End)
+
+- **Previsualizador en Tiempo Real:** Interfaz limpia que permite al usuario ver exactamente cómo se comportará el scroll del GIF antes de renderizarlo, eliminando el proceso de "ensayo y error".
+- **Control Paramétrico:** Los usuarios tienen control total sobre el resultado final mediante ajustes dinámicos de tiempo de duración, *Frame Rate* (FPS) y *Aspect Ratio* (proporción visual).
+- **Procesamiento Client-Side:** Toda la lógica de conversión de imagen a GIF ocurre directamente en el navegador del usuario utilizando JavaScript, lo que garantiza privacidad total de los archivos y elimina la necesidad de costos de servidor (Backend).
+- **Diseño Orientado a Herramientas:** Una UI/UX despojada de distracciones visuales, enfocada 100% en la tarea. El diseño guía al usuario paso a paso desde la subida del JPG/PNG hasta la descarga final.
+
+## Tecnologías Utilizadas
+
+- **React:** Arquitectura base de la aplicación y manejo del estado (State Management) para los controles deslizantes y opciones de configuración.
+- **Canvas API / Lógica de Renderizado:** Para la manipulación de los píxeles de la imagen original y la generación de los cuadros (frames) del GIF.
+- **CSS / Tailwind:** Para una maquetación responsiva, asegurando que la herramienta sea utilizable tanto en monitores grandes como en laptops.
+
+## Retos y Aprendizajes
+
+El mayor desafío técnico fue optimizar el rendimiento de la aplicación. Generar un GIF cuadro por cuadro en el navegador puede consumir mucha memoria RAM y bloquear el hilo principal (Main Thread) de JavaScript. Solucioné esto optimizando la forma en que se capturan y procesan los *frames* a través del Canvas, logrando un equilibrio perfecto entre una alta calidad visual y un peso de archivo optimizado para redes sociales.
+
+## Resultado
+
+Una herramienta interna que nació de una necesidad personal de diseño y se convirtió en un producto funcional. Demuestra la capacidad de identificar puntos de dolor en el flujo de trabajo de UX/UI y resolverlos creando software escalable.
+
+---
