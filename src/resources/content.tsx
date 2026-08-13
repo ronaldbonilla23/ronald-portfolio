@@ -5,11 +5,11 @@ const person: Person = {
   firstName: "Ronald",
   lastName: "Bonilla",
   name: `Ronald Bonilla`,
-  role: "Senior UX/UI Designer & Front-End Developer",
+  role: "Design Engineer · Frontend & UX/UI Developer",
   avatar: "/images/avatar.jpg",
   email: "ronaldbonilla@gmail.com",
   location: "America/Bogota", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["Español", "English"], // optional: Leave the array empty if you don't want to display languages
+  languages: ["Spanish", "English"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -42,8 +42,8 @@ const home: Home = {
   image: "/images/og/home.jpg",
   label: "Home",
   title: `Portfolio ${person.name} `,
-  description: `Portfolio perssonal mostrando mi trabajo como ${person.role}`,
-  headline: <>Fusionando diseño y código</>,
+  description: `Personal portfolio showcasing my work as a ${person.role}`,
+  headline: <>Bridging Design and Code</>,
   featured: {
     display: false,
     title: (
@@ -59,7 +59,7 @@ const home: Home = {
   },
   subline: (
     <>
-      Soy Ronald, un perfil híbrido de UX/UI y Front-End enfocado en <Text as="span" size="xl" weight="strong">Sistemas Escalables</Text>. Acorto la brecha entre la estética visual y el código, transformando problemas complejos en experiencias fluidas.
+      I'm Ronald, a hybrid UX/UI and Front-End profile focused on <Text as="span" size="xl" weight="strong">Scalable Systems</Text>. I close the gap between visual design and code, turning complex problems into fluid experiences — increasingly powered by AI-assisted workflows.
     </>
   ),
 };
@@ -68,7 +68,7 @@ const about: About = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  description: `Meet ${person.name}, a ${person.role} based in Colombia`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -85,24 +85,24 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Soy Ronald, un perfil híbrido de UX/UI y Front-End enfocado en Sistemas Escalables. Acorto la brecha entre la estética visual y el código, transformando problemas complejos en experiencias fluidas.
+        I'm Ronald, a hybrid UX/UI and Front-End profile focused on Scalable Systems. I close the gap between visual design and code, turning complex problems into fluid experiences — increasingly powered by AI-assisted workflows.
       </>
     ),
   },
   work: {
     display: true,
-    title: "Experiencia Laboral",
+    title: "Work Experience",
     experiences: [
       {
-        company: "Consultor Independiente",
-        timeframe: "2024 - Presente",
-        role: "Senior UX/UI Designer & Front-End Developer",
+        company: "Independent Consultant",
+        timeframe: "2024 - Present",
+        role: "Design Engineer · Frontend & UX/UI Developer",
         achievements: [
           <>
-            Desarrollo de interfaces escalables y prototipado bajo el enfoque <strong>'Component-Driven Design'</strong> para integraciones sin fricción en entornos React, Next.js y Svelte.
+            Built scalable interfaces and prototypes under a <strong>'Component-Driven Design'</strong> approach for frictionless integration across React, Next.js and Svelte.
           </>,
           <>
-            Liderazgo en estrategias de optimización de conversión (CRO) y arquitecturas dinámicas (WordPress/Headless) para clientes B2B/B2C, como Ancore.es, Makai Hostel y Finca Don Raul.
+            Led conversion rate optimization (CRO) strategy and dynamic architectures (WordPress/Headless) for B2B/B2C clients such as Ancore.es, Makai Hostel and Finca Don Raul.
           </>,
         ],
         images: [],
@@ -113,10 +113,10 @@ const about: About = {
         role: "Web Designer & Developer",
         achievements: [
           <>
-            Gestión y modernización integral de sitios web corporativos de alto tráfico, erradicando la deuda técnica legacy mediante la integración de un nuevo Front-End modular en <strong>dotCMS</strong>.
+            Managed and fully modernized high-traffic corporate websites, eliminating legacy technical debt by integrating a new modular Front-End on <strong>dotCMS</strong>.
           </>,
           <>
-            Creación del Sistema de Diseño omnicanal para la App móvil (+1.5M usuarios activos) y diseño de la Intranet corporativa para más de 6,000 empleados.
+            Built the omnichannel Design System for the mobile app (+1.5M active users) and designed the corporate Intranet for over 6,000 employees.
           </>,
         ],
         images: [],
@@ -127,21 +127,21 @@ const about: About = {
         role: "Senior Front-End Developer",
         achievements: [
           <>
-            Lideré el desarrollo en ecosistemas Full Stack, logrando una reducción del <strong>45% en los tiempos de carga</strong> de las plataformas.
+            Led Full Stack development, achieving a <strong>45% reduction in load times</strong> across platforms.
           </>,
           <>
-            Desarrollo de la capa Front-End para plataformas EdTech (como la certificación de BPM SAS) implementando interfaces reactivas con <strong>Vue.js y Laravel Livewire</strong>.
+            Built the Front-End layer for EdTech platforms (including BPM SAS certification) with reactive interfaces using <strong>Vue.js and Laravel Livewire</strong>.
           </>,
         ],
         images: [],
       },
       {
-        company: "SENA (Servicio Nacional de Aprendizaje)",
+        company: "SENA (National Learning Service)",
         timeframe: "2015 - 2019",
         role: "Sennova Designer",
         achievements: [
           <>
-            Lideré el diseño y desarrollo técnico de herramientas interactivas orientadas a la tecnología educativa (EdTech) a nivel nacional.
+            Led the design and technical development of interactive tools for educational technology (EdTech) at a national level.
           </>,
         ],
         images: [],
@@ -150,22 +150,22 @@ const about: About = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studios",
+    title: "Education",
     institutions: [
       {
         name: "Universidad de Caldas",
-        description: <>Diseñador Visual.</>,
+        description: <>Visual Designer.</>,
       }
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Habilidades Técnicas",
+    title: "Technical Skills",
     skills: [
       {
         title: "Figma",
         description: (
-          <>Capaz de prototipar en Figma bajo una lógica estricta de componentes, acelerando el paso a código para producción.</>
+          <>Prototyping in Figma under a strict component-driven logic, accelerating the handoff into production code.</>
         ),
         tags: [
           {
@@ -189,7 +189,7 @@ const about: About = {
       {
         title: "React.js & Vue.js Ecosystem",
         description: (
-          <>Desarrollo de interfaces reactivas y flujos interactivos dinámicos. Gestión eficiente del estado en el Front-End para plataformas educativas y corporativas utilizando <strong>Vue.js</strong> y <strong>React.js</strong>.</>
+          <>Building reactive interfaces and dynamic interactive flows. Efficient Front-End state management for educational and corporate platforms using <strong>Vue.js</strong> and <strong>React.js</strong>.</>
         ),
         tags: [
           {
@@ -238,7 +238,7 @@ const work: Work = {
 
 const gallery: Gallery = {
   path: "/gallery",
-  label: "Galleria",
+  label: "Gallery",
   title: `Photo gallery – ${person.name}`,
   description: `A photo collection by ${person.name}`,
   // Images by https://lorant.one

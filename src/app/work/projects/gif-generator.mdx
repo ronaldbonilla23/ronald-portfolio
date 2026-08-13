@@ -1,7 +1,7 @@
 ---
 title: "Portfolio GIF Generator: React Web App"
 publishedAt: "2026-02-26"
-summary: "Web App en React diseñada para convertir imágenes estáticas (JPG/PNG) en GIFs de scroll vertical, optimizados para Behance y Pinterest, con previsualización en tiempo real."
+summary: "React web app that converts static images (JPG/PNG) into vertical-scroll GIFs, optimized for Behance and Pinterest, with real-time preview."
 images:
   - "/images/projects/scrollgen/scrollgen.jpg"
 team:
@@ -12,29 +12,29 @@ team:
 link: "https://gif-generator-app-one.vercel.app/"
 ---
 
-## Resumen del Proyecto
+## Project Summary
 
-Al armar casos de estudio para Behance o Pinterest, los diseñadores nos enfrentamos a un problema constante: mostrar diseños largos (landing pages) de forma dinámica sin perder calidad. Para solucionar esto, diseñé y desarrollé desde cero una Web App en React que automatiza la creación de GIFs de scroll vertical. La herramienta permite subir mockups, ajustar parámetros técnicos y descargar un archivo optimizado en segundos, todo bajo una interfaz minimalista y sin fricciones.
+When putting together case studies for Behance or Pinterest, designers face a recurring problem: showcasing long designs (landing pages) dynamically without losing quality. To solve this, I designed and built a React web app from scratch that automates the creation of vertical-scroll GIFs. The tool lets users upload mockups, adjust technical parameters, and download an optimized file in seconds — all through a minimalist, frictionless interface.
 
-## Características Clave (UX/UI & Front-End)
+## Key Features (UX/UI & Front-End)
 
-- **Previsualizador en Tiempo Real:** Interfaz limpia que permite al usuario ver exactamente cómo se comportará el scroll del GIF antes de renderizarlo, eliminando el proceso de "ensayo y error".
-- **Control Paramétrico:** Los usuarios tienen control total sobre el resultado final mediante ajustes dinámicos de tiempo de duración, *Frame Rate* (FPS) y *Aspect Ratio* (proporción visual).
-- **Procesamiento Client-Side:** Toda la lógica de conversión de imagen a GIF ocurre directamente en el navegador del usuario utilizando JavaScript, lo que garantiza privacidad total de los archivos y elimina la necesidad de costos de servidor (Backend).
-- **Diseño Orientado a Herramientas:** Una UI/UX despojada de distracciones visuales, enfocada 100% en la tarea. El diseño guía al usuario paso a paso desde la subida del JPG/PNG hasta la descarga final.
+- **Real-Time Preview:** A clean interface that lets users see exactly how the GIF's scroll will behave before rendering it, eliminating the trial-and-error process.
+- **Parametric Control:** Users have full control over the final output through dynamic adjustments to duration, frame rate (FPS), and aspect ratio.
+- **Client-Side Processing:** The entire image-to-GIF conversion logic runs directly in the user's browser via JavaScript, guaranteeing full file privacy and eliminating backend server costs.
+- **Tool-Oriented Design:** A UI/UX stripped of visual distractions, 100% focused on the task. The design guides the user step by step from uploading the JPG/PNG to the final download.
 
-## Tecnologías Utilizadas
+## Technologies Used
 
-- **React:** Arquitectura base de la aplicación y manejo del estado (State Management) para los controles deslizantes y opciones de configuración.
-- **Canvas API / Lógica de Renderizado:** Para la manipulación de los píxeles de la imagen original y la generación de los cuadros (frames) del GIF.
-- **CSS / Tailwind:** Para una maquetación responsiva, asegurando que la herramienta sea utilizable tanto en monitores grandes como en laptops.
+- **React:** Core application architecture and state management for sliders and configuration options.
+- **Canvas API / Rendering Logic:** For manipulating the original image's pixels and generating the GIF's frames.
+- **CSS / Tailwind:** Responsive layout, ensuring the tool works on both large monitors and laptops.
 
-## Retos y Aprendizajes
+## Challenges & Learnings
 
-El mayor desafío técnico fue optimizar el rendimiento de la aplicación. Generar un GIF cuadro por cuadro en el navegador puede consumir mucha memoria RAM y bloquear el hilo principal (Main Thread) de JavaScript. Solucioné esto optimizando la forma en que se capturan y procesan los *frames* a través del Canvas, logrando un equilibrio perfecto entre una alta calidad visual y un peso de archivo optimizado para redes sociales.
+The biggest technical challenge was optimizing app performance. Generating a GIF frame-by-frame in the browser can consume a lot of RAM and block JavaScript's main thread. I solved this by optimizing how frames are captured and processed through the Canvas, achieving the right balance between high visual quality and a file size optimized for social media.
 
-## Resultado
+## Result
 
-Una herramienta interna que nació de una necesidad personal de diseño y se convirtió en un producto funcional. Demuestra la capacidad de identificar puntos de dolor en el flujo de trabajo de UX/UI y resolverlos creando software escalable.
+An internal tool born from a personal design need that became a functional product. It shows the ability to spot pain points in the UX/UI workflow and solve them by building scalable software.
 
 ---
