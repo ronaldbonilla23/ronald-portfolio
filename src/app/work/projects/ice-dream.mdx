@@ -1,0 +1,43 @@
+---
+title: "The Ice Dream: Atomic Design System for E-commerce"
+publishedAt: "2026-08-20"
+summary: "UX/UI design challenge: a full token-based design system and DTC e-commerce experience (mobile app + desktop web) for a high-contrast ice cream brand concept."
+images:
+  - "/images/projects/ice-dream/ice-dream-01.png"
+  - "/images/projects/ice-dream/ice-dream-02.png"
+  - "/images/projects/ice-dream/ice-dream-03.png"
+  - "/images/projects/ice-dream/ice-dream-04.png"
+  - "/images/projects/ice-dream/ice-dream-05.png"
+team:
+  - name: "Ronald Bonilla"
+    role: "UX/UI Designer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/ronald-bonilla/"
+link: "https://www.figma.com/proto/NkqIcuQTrSkLX0eBzuEf7x/The-ICE-DREAM?page-id=3%3A54&node-id=27-24&viewport=432%2C208%2C0.37&scaling=scale-down&content-scaling=fixed&starting-point-node-id=27%3A24"
+---
+
+## Project Summary
+
+The Ice Dream is a UX/UI design challenge built for a job application: design a complete e-commerce experience — mobile app and desktop web — for "Acid Cream," a fictional high-contrast ice cream brand. Rather than designing individual screens, I approached it the way a real design-systems engagement should be approached: define the token architecture first, then assemble every screen from that system, so the same rigor holds up across mobile and desktop without one-off exceptions.
+
+## Token Architecture (Atomic Foundations)
+
+- **Semantic Color Tokens:** Built "The Acid Cream Palette" as a structured token scale — `Background/Cream`, `Ink/Main`, `Ink/Muted`, and four brand ramps (`Acid Lime`, `Electric Tangerine`, `Cyber Berry`, `Blue Moon`) each running 100 → 900, so any surface can pull the right contrast step by name instead of a hardcoded hex.
+- **Typographic Hierarchy:** Paired a bold display face (TAN Songbird) for character-driven headlines with Geist for body and UI text, keeping the interface legible under a visually loud brand.
+- **Component States:** Every interactive atom (buttons, pills, icons) was built with Default, Hover, and Pressed states from the start, not patched in later.
+
+## Building the Experience (Molecules → Organisms)
+
+- **Atomic Component Library:** Buttons and inputs (molecules) assembled into Product Cards, a Hero section, Nav Bar, and Tab Bar (organisms) — all consuming the same token set, so restyling the brand means changing tokens, not hunting through screens.
+- **Product Cards:** Designed so the hyper-realistic product photography dominates ~60% of the card, with frameless floating badges ("NEW," "LIMITED") layered on top for merchandising flexibility.
+
+## Mobile & Desktop Experience
+
+- **Mobile (Thumb-Zone Engineered):** A persistent bottom tab bar keeps Home, Search, and Cart within reach; one-tap "Add to Cart" on product cards skips the extra step into a full PDP for fast-moving purchase decisions.
+- **Desktop (Panoramic Discovery):** A left-hand filter sidebar (by flavor profile) sits alongside a 3-column product grid built with Figma Auto Layout, with distinct hover states for cursor-driven interaction — plus promo modules and a footer newsletter capture.
+
+## Result
+
+A complete, documented Figma system — foundations, components, and two full platform experiences — built so a developer could implement it from the token names and component specs alone, with zero screen-by-screen guesswork. [View the interactive prototype](https://www.figma.com/proto/NkqIcuQTrSkLX0eBzuEf7x/The-ICE-DREAM?page-id=3%3A54&node-id=27-24&viewport=432%2C208%2C0.37&scaling=scale-down&content-scaling=fixed&starting-point-node-id=27%3A24).
+
+---
